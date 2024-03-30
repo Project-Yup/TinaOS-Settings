@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar" />
+    <style name="bottom_btn">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_time_over_delay_use</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginBottom">48.0dip</item>
+        <item name="android:layout_marginHorizontal">28.0dip</item>
+    </style>
+    <style name="guard_item_container">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_guard_item_container</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">113.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingHorizontal">16.0dip</item>
+        <item name="android:paddingVertical">18.0dip</item>
+    </style>
+    <style name="remain_time">
+        <item name="android:textSize">@dimen/usage_time_summary_font_size</item>
+        <item name="android:textColor">@color/usage_app_detail_remain_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">mipro</item>
+        <item name="android:paddingHorizontal">@dimen/usage_state_item_common_margin</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+        <item name="colorError">?android:colorError</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+        <item name="colorError">?android:colorError</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="@style/Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+</resources>

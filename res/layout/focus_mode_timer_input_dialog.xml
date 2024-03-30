@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <miuix.androidbasewidget.widget.StateEditText android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="3" android:inputType="number" android:fontFamily="mipro-regular" android:textDirection="anyRtl" android:textAlignment="viewStart" android:layout_marginStart="@dimen/dialog_margin_start" android:layout_marginEnd="@dimen/dialog_margin_start" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/timer_add_dialog_illegal_red" android:id="@id/illegalTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dialog_margin_start" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/dialog_space_height" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dialog_margin_start" android:layout_marginEnd="@dimen/dialog_margin_start">
+        <Button android:textSize="@dimen/focus_edit_button_text_size" android:textColor="@color/transparent_80_balck" android:id="@id/dialog_btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/screen_cancel" android:layout_weight="1.0" style="?buttonBarNegativeButtonStyle" />
+        <Space android:layout_width="14.5dip" android:layout_height="51.0dip" />
+        <Button android:textSize="@dimen/focus_edit_button_text_size" android:id="@id/dialog_btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cu_confirm" android:layout_weight="1.0" style="?buttonBarPrimaryButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

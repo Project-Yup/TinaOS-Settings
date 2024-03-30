@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_list_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="0.0dip" android:paddingEnd="@dimen/common_24_px2dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_list_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/desktop_widget_item_us_placeholder_4_2" />
+        <include layout="@layout/desktop_widget_usage_width_placeholder" />
+        <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/desktop_widget_item_us_placeholder_4_2" />
+    </LinearLayout>
+    <TextView android:textSize="0.0dip" android:id="@id/ll_placeholder_5" android:layout_width="1.0dip" android:layout_height="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_list_2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/desktop_widget_item_us_placeholder_4_2" />
+        <include layout="@layout/desktop_widget_usage_width_placeholder" />
+        <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/desktop_widget_item_us_placeholder_4_2" />
+    </LinearLayout>
+</LinearLayout>

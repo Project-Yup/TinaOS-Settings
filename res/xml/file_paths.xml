@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <paths>
+            <external-path name="share" path="Android/AppTimer/Img" />
+            <files-path name="share_files" path="AppTimer/Img" />
+            <external-files-path name="share_external_files" path="AppTimer/Img" />
+        </paths>
+    </paths>
+</resources>

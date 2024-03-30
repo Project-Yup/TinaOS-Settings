@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/id_door_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:lottie_fileName="@string/door_amin_file_anme" app:lottie_imageAssetsFolder="@string/door_amin_assert" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/usage_stats_only_white" android:gravity="center" android:id="@id/id_btn_cancel" android:background="@drawable/bg_focus_timing_btn" android:layout_width="fill_parent" android:layout_height="@dimen/usage_stats_focus_btn_height" android:layout_marginLeft="@dimen/usage_state_item_common_margin" android:layout_marginRight="@dimen/usage_state_item_common_margin" android:layout_marginBottom="@dimen/usage_focus_setting_bottom" android:maxWidth="336.0dip" android:text="@string/screen_cancel" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginHorizontal="@dimen/usage_state_item_common_margin" />
+</RelativeLayout>

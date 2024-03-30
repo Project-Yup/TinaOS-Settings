@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@android:id/content" android:background="@drawable/fps_tips_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fps_save_battery_tips_bg_margin_bottom">
+        <FrameLayout android:id="@id/text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/fps_view_pre_layout_left_text_margen_bottom" android:layout_marginBottom="@dimen/fps_view_pre_layout_left_text_margen_bottom" android:layout_marginEnd="@dimen/fps_view_pre_layout_left_text_margen_end">
+            <androidx.appcompat.widget.AppCompatCheckedTextView android:textSize="@dimen/fps_save_battery_tips_text_size" android:textStyle="normal" android:textColor="@color/selected_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@android:id/title" android:scrollbars="none" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="mipro-medium" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="end|center" android:id="@id/arrow_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/home_content_indicator_margin" android:paddingTop="16.0dip" android:paddingRight="@dimen/home_content_indicator_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/home_content_indicator_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/ll_guard_apps" style="@style/guard_item_container">
+            <ImageView android:src="@drawable/ic_guard_apps" style="@style/guard_item_image" />
+            <TextView android:text="@string/guard_item_app_title" style="@style/guard_item_title" />
+            <TextView android:text="@string/guard_item_app_summary" style="@style/guard_item_summary" />
+        </LinearLayout>
+        <Space android:layout_width="12.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/ll_guard_browser" style="@style/guard_item_container">
+            <ImageView android:src="@drawable/ic_guard_browser" style="@style/guard_item_image" />
+            <TextView android:text="@string/guard_item_browser_title" style="@style/guard_item_title" />
+            <TextView android:text="@string/guard_item_browser_summary" style="@style/guard_item_summary" />
+        </LinearLayout>
+    </LinearLayout>
+    <Space android:layout_width="1.0dip" android:layout_height="12.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/ll_guard_eye_protect" style="@style/guard_item_container">
+            <ImageView android:src="@drawable/ic_guard_eye_protect" style="@style/guard_item_image" />
+            <TextView android:text="@string/guard_item_eye_protect_title" style="@style/guard_item_title" />
+            <TextView android:text="@string/guard_item_eye_protect_summary" style="@style/guard_item_summary" />
+        </LinearLayout>
+        <Space android:layout_width="12.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/ll_guard_call" android:visibility="invisible" style="@style/guard_item_container">
+            <ImageView android:src="@drawable/ic_guard_call" style="@style/guard_item_image" />
+            <TextView android:text="@string/guard_item_call_title" style="@style/guard_item_title" />
+            <TextView android:text="@string/guard_item_call_summary" style="@style/guard_item_summary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

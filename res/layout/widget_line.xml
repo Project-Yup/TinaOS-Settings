@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/divide_line" android:background="@drawable/miuix_preference_item_background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.399994dip">
+        <View android:layout_gravity="center_vertical" android:background="@color/usage_divide" android:layout_width="fill_parent" android:layout_height="@dimen/usage_line_height" />
+    </FrameLayout>
+    <View android:id="@id/id_line1" android:background="@color/usage_stats_remind_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.359985dip" />
+</LinearLayout>

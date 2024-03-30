@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.coolsound.widget.CoolSoundPageLayout android:orientation="vertical" android:id="@id/view_cool_sound_page_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nature_animal_view" />
+    <com.android.settings.coolsound.widget.RingtoneGridView android:id="@id/ringtone_grid" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/coolsound_animals_padding" android:paddingEnd="@dimen/coolsound_animals_padding" />
+</com.android.settings.coolsound.widget.CoolSoundPageLayout>

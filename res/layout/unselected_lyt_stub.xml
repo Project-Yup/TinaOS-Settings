@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/unselected_lyt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="500.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="18.199982dip" android:textColor="@color/mashup_entrance_title_color" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/all_ringtone" android:textDirection="locale" android:layout_marginStart="@dimen/ringtone_card_padding" />
+        <TextView android:textSize="13.099976dip" android:textColor="@color/selected_ringtone_text_color" android:id="@android:id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/all_ringtone_summary" android:textDirection="locale" android:layout_marginStart="@dimen/ringtone_card_padding" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyt_icon_ringtone" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ic_ringtone" android:layout_width="@dimen/laughing_kookaburra_width" android:layout_height="@dimen/laughing_kookaburra_height" android:src="@drawable/laughing_kookaburra" android:layout_marginEnd="@dimen/laughing_kookaburra_margin_end" />
+    </LinearLayout>
+</LinearLayout>

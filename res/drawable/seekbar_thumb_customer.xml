@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/expert_hue_thumb_radius" android:color="@color/color_thumb_customer" />
+    <size android:height="@dimen/expert_hue_thumb_height" android:width="@dimen/expert_hue_thumb_height" />
+</shape>

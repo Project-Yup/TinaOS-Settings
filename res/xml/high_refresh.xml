@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/opened_high_refresh_options" android:key="opened_preference_category" />
+    <PreferenceCategory android:title="@string/closed_high_refresh_options" android:key="closed_preference_category" />
+</PreferenceScreen>

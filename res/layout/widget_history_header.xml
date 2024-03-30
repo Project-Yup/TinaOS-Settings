@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/id_level_icon" android:layout_width="@dimen/bg_share_main_level_icon_wh" android:layout_height="@dimen/bg_share_main_level_icon_he" android:src="@drawable/lv1" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/usage_stats_item_margin">
+        <TextView android:textSize="12.0sp" android:textColor="@color/usage_stats_black50" android:id="@id/id_num_level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/usage_stats_black50" android:id="@id/id_level_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/usage_focus_history_top">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.2">
+            <TextView android:gravity="center_vertical" android:id="@id/id_add_up_time" style="@style/HistoryText" />
+            <TextView android:text="@string/usage_state_add_up_time" style="@style/HistorySummary" />
+        </LinearLayout>
+        <Space android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/id_over_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/id_over_fans" style="@style/HistoryText" />
+            <TextView android:text="@string/usage_state_over_p" style="@style/HistorySummary" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/usage_focus_history_top">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/id_add_up_days" style="@style/HistoryText" />
+            <TextView android:text="@string/usage_total_days" style="@style/HistorySummary" />
+        </LinearLayout>
+        <Space android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/id_running_days" style="@style/HistoryText" />
+            <TextView android:text="@string/usage_continuous_days" style="@style/HistorySummary" />
+        </LinearLayout>
+        <Space android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/id_add_up_count" style="@style/HistoryText" />
+            <TextView android:text="@string/usage_total_times" style="@style/HistorySummary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

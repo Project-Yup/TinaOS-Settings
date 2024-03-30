@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/animal_card" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/animal_card_width" android:layout_height="fill_parent" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:cardCornerRadius="@dimen/animal_card_radius" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/animal_card_bottom_horizontal_edge" android:paddingRight="@dimen/animal_card_bottom_horizontal_edge" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.5dip" android:layout_marginBottom="18.0dip" android:paddingHorizontal="@dimen/animal_card_bottom_horizontal_edge">
+            <RelativeLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="20.0dip" android:textColor="@color/animal_name_color" android:ellipsize="marquee" android:id="@id/animal_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/animal_sound_page_name_max_width" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                        <Space android:layout_width="11.0dip" android:layout_height="wrap_content" />
+                        <com.android.settings.coolsound.widget.PlayView android:layout_gravity="center_vertical" android:id="@id/play_view" android:visibility="gone" android:layout_width="19.599976dip" android:layout_height="20.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0dip" android:textColor="@color/animal_info_color" android:id="@id/animal_info" android:scrollbars="vertical" android:layout_width="@dimen/animal_card_info_width" android:layout_height="@dimen/animal_info_height" android:layout_marginTop="@dimen/animal_card_text_top_margin" android:textDirection="locale" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TableLayout android:id="@id/animal_class" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/animal_card_bottom_text_top_margin" android:stretchColumns="*">
+                <TableRow>
+                    <TextView android:textSize="10.899994dip" android:textColor="@color/animal_class_color" android:id="@id/gang" android:layout_width="0.0dip" android:text="@string/animal_class" android:layout_weight="1.0" android:textDirection="locale" />
+                    <TextView android:textSize="10.899994dip" android:textColor="@color/animal_class_color" android:id="@id/item" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/animal_card_bottom_text_edge" android:layout_marginRight="@dimen/animal_card_bottom_text_edge" android:text="@string/animal_item" android:layout_weight="1.0" android:textDirection="locale" android:layout_marginHorizontal="@dimen/animal_card_bottom_text_edge" />
+                    <TextView android:textSize="10.899994dip" android:textColor="@color/animal_class_color" android:id="@id/branch" android:layout_width="0.0dip" android:text="@string/animal_branch" android:layout_weight="1.0" android:textDirection="locale" />
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_marginTop="2.0px">
+                    <TextView android:textSize="13.799988dip" android:textColor="@color/animal_desc_info" android:id="@id/class_info" android:layout_width="0.0dip" android:layout_weight="1.0" android:fontFamily="mipro-medium" android:textDirection="locale" />
+                    <TextView android:textSize="13.799988dip" android:textColor="@color/animal_desc_info" android:id="@id/item_info" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/animal_card_bottom_text_edge" android:layout_marginRight="@dimen/animal_card_bottom_text_edge" android:layout_weight="1.0" android:fontFamily="mipro-medium" android:textDirection="locale" android:layout_marginHorizontal="@dimen/animal_card_bottom_text_edge" />
+                    <TextView android:textSize="13.799988dip" android:textColor="@color/animal_desc_info" android:id="@id/branch_info" android:layout_width="0.0dip" android:layout_weight="1.0" android:fontFamily="mipro-medium" android:textDirection="locale" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/animal_icon" android:layout_width="@dimen/animal_card_icon_width" android:layout_height="wrap_content" android:adjustViewBounds="true" android:translationY="-60.0px" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

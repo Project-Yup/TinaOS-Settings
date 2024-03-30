@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dip" android:width="40.0dip" android:viewportWidth="40.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M10,0L30,0A10,10 0,0 1,40 10L40,30A10,10 0,0 1,30 40L10,40A10,10 0,0 1,0 30L0,10A10,10 0,0 1,10 0z" />
+        <path android:fillColor="#ffffffff" android:pathData="M0,-0h40v40h-40z" />
+        <path android:fillColor="#00000000" android:pathData="M28.117,13.076L11.817,26.015" android:strokeColor="@drawable/$mi_transfer_icon__0" android:strokeWidth="5.61547" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.250907" android:fillAlpha="0.250907" />
+        <path android:fillColor="@drawable/$mi_transfer_icon__1" android:pathData="M15.661,7C15.142,7 14.646,7.216 14.291,7.596L9.502,12.735C8.798,13.491 8.839,14.676 9.596,15.381C9.942,15.703 10.398,15.883 10.872,15.883H16.516C16.56,15.883 16.603,15.88 16.645,15.875C16.717,15.88 16.79,15.883 16.864,15.883H28.095C29.646,15.883 30.903,14.626 30.903,13.075C30.903,11.525 29.646,10.268 28.095,10.268L17.533,10.267V8.872C17.533,7.838 16.695,7 15.661,7Z" android:fillType="evenOdd" />
+        <path android:fillColor="@drawable/$mi_transfer_icon__2" android:pathData="M24.274,32.278C24.801,32.278 25.303,32.056 25.658,31.667L30.512,26.34C31.208,25.575 31.153,24.392 30.389,23.695C30.044,23.381 29.595,23.207 29.128,23.207H23.419C23.375,23.207 23.332,23.21 23.289,23.215C23.217,23.21 23.144,23.207 23.071,23.207H11.84C10.289,23.207 9.032,24.464 9.032,26.015C9.032,27.566 10.289,28.823 11.84,28.823L22.402,28.823V30.406C22.402,31.44 23.24,32.278 24.274,32.278Z" android:fillType="evenOdd" />
+    </group>
+</vector>

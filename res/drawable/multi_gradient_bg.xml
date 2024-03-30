@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.misettings.widget.MultiGradientDrawable android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <corners app:gradient_radius="200.0dip" />
+    <gradient android:angle="0.0" app:gradient_colors="@array/gradient_colors" app:gradient_positions="@array/gradient_positions" />
+</com.xiaomi.misettings.widget.MultiGradientDrawable>

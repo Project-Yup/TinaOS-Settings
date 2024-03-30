@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_share_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top" layout="@layout/usagestats_focus_title_bar" />
+    <FrameLayout android:id="@id/id_share_content" android:layout_width="@dimen/bg_share_width" android:layout_height="@dimen/bg_share_height" android:layout_marginTop="@dimen/usage_stats_share_container_margin_top" android:layout_below="@id/title" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/id_image_bg" android:background="@drawable/history_share_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+        <ImageView android:layout_gravity="end" android:background="@drawable/rock_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/focus_page_rock_top" android:scaleType="fitStart" android:layout_marginStart="@dimen/focus_page_rock_start" />
+        <ImageView android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_marginEnd="28.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/id_share_detail" android:layout_width="@dimen/bg_share_width" android:layout_height="@dimen/bg_share_height" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/usage_stats_share_large_title_text_size" android:textColor="@color/usage_stats_only_black" android:id="@id/id_share_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bg_share_main_title_margin_top" android:fontFamily="mipro-demibold" android:layout_marginStart="@dimen/bg_share_margin_start" />
+            <TextView android:textSize="@dimen/usage_stats_share_hint_title_text_size" android:textColor="@color/usage_stats_only_black50" android:id="@id/id_share_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bg_share_margin_start" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/usage_stats_share_time_margin_top" android:layout_marginStart="@dimen/bg_share_margin_start">
+                <TextView android:textSize="@dimen/usage_stats_share_bottom_middle_text_size" android:textColor="@color/usage_stats_only_black50" android:text="@string/usage_state_add_up_time" style="@style/HistorySummary" />
+                <TextView android:textSize="@dimen/usage_stats_share_main_content_text_size" android:textColor="@color/usage_stats_only_black" android:gravity="center_vertical" android:id="@id/id_add_up_time" style="@style/HistoryText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/usage_stats_share_common_edge" android:layout_marginStart="@dimen/bg_share_margin_start" android:layout_marginEnd="@dimen/bg_share_margin_start">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/usage_stats_share_bottom_middle_text_size" android:textColor="@color/usage_stats_only_black50" android:text="@string/usage_total_days" style="@style/HistorySummary" />
+                    <TextView android:textSize="@dimen/usage_stats_share_main_content_text_size" android:textColor="@color/usage_stats_only_black" android:id="@id/id_add_up_days" style="@style/HistoryText" />
+                </LinearLayout>
+                <Space android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/usage_stats_share_bottom_middle_text_size" android:textColor="@color/usage_stats_only_black50" android:text="@string/usage_continuous_days" style="@style/HistorySummary" />
+                    <TextView android:textSize="@dimen/usage_stats_share_main_content_text_size" android:textColor="@color/usage_stats_only_black" android:id="@id/id_running_days" style="@style/HistoryText" />
+                </LinearLayout>
+                <Space android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/usage_stats_share_bottom_middle_text_size" android:textColor="@color/usage_stats_only_black50" android:text="@string/usage_total_times" style="@style/HistorySummary" />
+                    <TextView android:textSize="@dimen/usage_stats_share_main_content_text_size" android:textColor="@color/usage_stats_only_black" android:id="@id/id_add_up_count" style="@style/HistoryText" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space android:layout_gravity="center_horizontal" android:background="@android:color/transparent" android:layout_width="1.0px" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bg_share_margin_start" android:layout_marginEnd="@dimen/bg_share_margin_start">
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/id_level_icon" android:layout_width="@dimen/bg_share_main_level_icon_wh" android:layout_height="@dimen/bg_share_main_level_icon_he" android:src="@drawable/lv1" app:lottie_loop="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/usage_stats_share_bottom_small_text_size" android:textColor="@color/color_focus" android:id="@id/id_beat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bg_share_main_title_margin_top" />
+            <TextView android:textSize="@dimen/usage_stats_share_bottom_level_text_size" android:textColor="@color/usage_stats_only_black" android:gravity="center" android:id="@id/id_level_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/usage_state_item_common_margin" android:layout_marginRight="@dimen/usage_state_item_common_margin" android:fontFamily="mipro-medium" android:layout_marginHorizontal="@dimen/usage_state_item_common_margin" />
+            <Space android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="28.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.xiaomi.misettings.usagestats.focusmode.widget.ShareAndDownloadView android:id="@id/id_share_download_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bg_share_margin_top" android:layout_below="@id/id_share_content" android:elevation="10.0dip" />
+    <ImageView android:id="@id/leaves_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="11.0dip" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/coolsound_tab_stroke_size" android:color="@color/transparent_40_balck" />
+    <corners android:topLeftRadius="0.0dip" android:topRightRadius="36.399994dip" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="36.399994dip" />
+    <solid android:color="@color/transparent_30_balck" />
+</shape>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="22.669983dip" android:layout_gravity="center_horizontal" android:id="@id/id_focus_time_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="mipro" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/usage_state_black" android:layout_gravity="center_horizontal" android:id="@id/id_focus_time_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="mipro" />
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</merge>

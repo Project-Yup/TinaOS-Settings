@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/scrollview"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/low_bright_preview" android:layout_width="@dimen/low_bright_preview_width" android:layout_height="@dimen/low_bright_preview_height" android:layout_marginTop="@dimen/anti_flicker_mode_small_margin" android:src="@drawable/anti_flicker_off" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="13.799988sp" android:textColor="@color/normal_summary_color" android:id="@id/low_bright_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/anti_flicker_mode_big_margin" android:layout_marginBottom="@dimen/anti_flicker_mode_small_margin" android:text="@string/low_light_preview" android:layout_below="@id/low_bright_preview" android:layout_centerHorizontal="true" android:fontFamily="mipro-medium" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/prefs_contain" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</miuix.springback.view.SpringBackLayout>

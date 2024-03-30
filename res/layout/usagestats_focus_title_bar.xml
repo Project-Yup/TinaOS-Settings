@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_focus_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/usage_stats_title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_back_icon" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" />
+    <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.WindowTitle" android:id="@id/btn_tap1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usage_state_focus_mode_title" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/id_show_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_focus_mode_data" android:layout_centerVertical="true" android:layout_marginEnd="17.619995dip" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/id_back" android:padding="@dimen/usage_stats_share_back_icon_container_padding" android:clickable="true" android:layout_width="@dimen/usage_stats_share_back_icon_container_wh" android:layout_height="@dimen/usage_stats_share_back_icon_container_wh" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/usage_focus_egde" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/follow_item" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/call_ringtone_margin" android:paddingEnd="@dimen/call_ringtone_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/call_ringtone_cat_margin">
+        <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.PreferenceList" android:ellipsize="end" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_sim1" android:textAlignment="viewStart" />
+        <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <miuix.slidingwidget.widget.SlidingButton android:gravity="center" android:layout_gravity="end|center" android:id="@id/follow_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/call_ringtone_cat_margin" />
+</LinearLayout>

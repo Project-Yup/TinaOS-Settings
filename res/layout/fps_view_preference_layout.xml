@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/fps_view_pre_layout_padding_top_and_bottom" android:paddingBottom="@dimen/fps_view_pre_layout_padding_top_and_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/selector_view" android:layout_width="fill_parent" android:layout_height="@dimen/fps_schematic_diagram_height">
+        <com.xiaomi.misettings.widget.RoundCornerLinearLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/fps_schematic_diagram_height" android:scaleType="centerCrop" app:lottie_autoPlay="true" app:lottie_fileName="fps_new.json" app:lottie_imageAssetsFolder="images" app:lottie_loop="true" />
+        </com.xiaomi.misettings.widget.RoundCornerLinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fps_view_pre_layout_left_text_margen_bottom" android:layout_alignParentBottom="true" android:layoutDirection="ltr">
+            <TextView android:textSize="@dimen/refresh_card_title_size" android:textColor="@color/color_thumb_customer" android:gravity="end" android:id="@id/fps_title_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fps_normal" android:layout_weight="1.0" android:fontFamily="mipro-medium" android:paddingEnd="@dimen/fps_view_pre_layout_left_text_padding_end" />
+            <TextView android:textSize="@dimen/refresh_card_title_size" android:textColor="@color/color_thumb_customer" android:gravity="end" android:id="@id/fps_title_high" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fps_high" android:layout_weight="1.0" android:fontFamily="mipro-medium" android:paddingEnd="@dimen/fps_view_pre_layout_left_text_padding_end" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_special_feature" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/id_feature_icon" android:layout_width="@dimen/usage_special_iconwh" android:layout_height="@dimen/usage_special_iconwh" android:layout_marginTop="18.0dip" android:layout_marginStart="@dimen/usage_special_padding_left" />
+    <TextView android:textSize="@dimen/usage_special_feature_title_text" android:textColor="@color/usage_state_black" android:id="@id/id_feature_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.699982dip" android:layout_marginStart="@dimen/usage_special_text_padding_left" />
+    <TextView android:textSize="@dimen/usage_special_feature_summary_text" android:textColor="@color/usage_stats_black30" android:id="@id/id_feature_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginStart="@dimen/usage_special_text_padding_left" />
+</LinearLayout>

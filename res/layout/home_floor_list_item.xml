@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/parent_controls_height" android:paddingStart="@dimen/usage_state_item_common_margin" android:paddingEnd="@dimen/usage_state_item_common_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xiaomi.misettings.widget.CircleImageView android:id="@id/id_icon" android:layout_width="@dimen/usage_new_home_item_icon_wh2" android:layout_height="@dimen/usage_new_home_item_icon_wh2" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/usage_stats_home_floor_list_text_left_margin">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/usage_stats_black90" android:ellipsize="end" android:id="@id/id_usage_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="mipro-medium" />
+            <Space android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/usage_stats_item_times_size" android:textColor="@color/usage_stats_item_times" android:ellipsize="end" android:id="@id/id_usage_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="mipro-medium" />
+        </LinearLayout>
+        <com.xiaomi.misettings.usagestats.home.widget.TimeUsageRatioView android:id="@id/id_time_progress" android:layout_width="fill_parent" android:layout_height="@dimen/select_bars_height" android:layout_marginTop="6.3299866dip" />
+    </LinearLayout>
+</LinearLayout>

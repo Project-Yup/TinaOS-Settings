@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout android:id="@id/id_spring_back" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollOrientation="vertical" app:scrollableView="@id/id_list">
+        <miuix.recyclerview.widget.RecyclerView android:id="@id/id_list" android:paddingLeft="@dimen/usage_state_item_common_margin" android:paddingRight="@dimen/usage_state_item_common_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/usage_state_item_common_margin" />
+    </com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout>
+    <com.xiaomi.misettings.usagestats.widget.LoadingView android:id="@id/id_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

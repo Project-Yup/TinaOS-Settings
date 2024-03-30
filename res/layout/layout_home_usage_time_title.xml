@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/usage_state_item_common_margin" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/usage_state_item_common_margin" android:layout_marginHorizontal="@dimen/usage_state_item_common_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/common_title_size" android:textColor="@color/usage_stats_black90" android:id="@id/id_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="mipro-medium" />
+    <miuix.appcompat.widget.Spinner android:id="@id/spinner_device" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="0.0dip" />
+</LinearLayout>

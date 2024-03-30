@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/id_header_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:rangeOffset="0.0px" app:scrollableView="@id/id_spring_back"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout android:id="@id/id_spring_back" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/id_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/id_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/id_indicator_container" android:background="@drawable/new_home_item_bg" android:padding="@dimen/usage_new_home_indicator_padding" android:layout_width="fill_parent" android:layout_height="@dimen/usage_new_home_indicator_height" android:layout_marginStart="25.449982dip" android:layout_marginEnd="25.449982dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_select_bg_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:id="@id/id_selected_bg" android:background="@drawable/new_home_indicator_selected_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.539978sp" android:textColor="@color/usage_new_home_indicator_text_color" android:gravity="center" android:id="@id/id_tab1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/usage_new_home_day_title" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.539978sp" android:textColor="@color/usage_new_home_indicator_text_color" android:gravity="center" android:id="@id/id_tab2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/usage_new_home_week_title" android:layout_weight="1.0" />
+                </LinearLayout>
+            </FrameLayout>
+            <com.xiaomi.misettings.usagestats.home.widget.ContentViewPager android:id="@id/id_main_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/app_cate_search_fragment_bg_view" android:background="@color/app_search_state_main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <miuix.recyclerview.widget.RecyclerView android:id="@id/search_view_list" android:background="@color/app_search_state_main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

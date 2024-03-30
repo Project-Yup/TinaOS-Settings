@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/id_top" android:background="@color/usage_stats_weeklyreport_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/id_bar" android:background="@color/usage_stats_weeklyreport_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/usage_stats_title_bar_height" android:layout_below="@id/id_top">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_back_normal_dark" android:contentDescription="@string/back" android:layout_marginStart="10.0dip" />
+    </FrameLayout>
+    <com.xiaomi.misettings.usagestats.weeklyreport.WeeklyReportWebView android:id="@id/id_weekly_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/id_bar" />
+    <include android:id="@id/id_loading_view" layout="@layout/layout_create_weekly_report" />
+    <ViewStub android:id="@id/id_no_net" android:layout="@layout/layout_no_net" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

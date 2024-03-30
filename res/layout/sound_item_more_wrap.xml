@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.coolsound.widget.MiuiDefaultRingtoneItem android:id="@id/ringtone_more" android:layout_width="wrap_content" android:layout_height="wrap_content" settings:layout="@layout/sound_item_more"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />

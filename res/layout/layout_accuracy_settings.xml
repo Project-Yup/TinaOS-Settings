@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/miuix_preference_category_background_light" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usage_stats_limit_time_warn" android:textAllCaps="true" style="@style/Miuix.AppCompat.TextAppearance.PreferenceCategory" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_accuracy_switch_container" android:background="@drawable/miuix_preference_item_background_light" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.PreferenceList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/usage_stats_limit_time_warn_title" android:textAlignment="viewStart" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/usage_stats_limit_time_warn_summary" android:textAlignment="viewStart" style="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" />
+        </LinearLayout>
+        <miuix.slidingwidget.widget.SlidingButton android:id="@id/id_accuracy_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_accuracy_set" android:background="@drawable/miuix_preference_item_background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.359985dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.PreferenceList" android:id="@id/id_accuracy_set_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usage_stats_limit_time_accuracy_title" android:textAlignment="viewStart" />
+            <TextView android:id="@id/id_accuracy_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/usage_stats_limit_time_warn_summary" android:textAlignment="viewStart" style="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" />
+        </LinearLayout>
+        <TextView android:id="@id/id_tv_accuracy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" style="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/miuix_appcompat_arrow_right" android:layout_marginStart="6.909973dip" />
+    </LinearLayout>
+</LinearLayout>

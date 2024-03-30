@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="root_preference"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xiaomi.misettings.display.ExpertPreferenceCategory android:title="@string/color_gamut" android:key="color_gamut">
+        <miuix.preference.RadioSetPreferenceCategory>
+            <com.xiaomi.misettings.display.ExpertRadioPreference android:title="@string/screen_original_gamut" android:key="original_gamut_key" android:summary="@string/screen_original_gamut_summary" />
+        </miuix.preference.RadioSetPreferenceCategory>
+        <miuix.preference.RadioSetPreferenceCategory>
+            <com.xiaomi.misettings.display.ExpertRadioPreference android:title="@string/primary_color_region" android:key="primary_color" android:summary="@string/primary_color_region_summary" />
+        </miuix.preference.RadioSetPreferenceCategory>
+        <miuix.preference.RadioSetPreferenceCategory>
+            <com.xiaomi.misettings.display.ExpertRadioPreference android:title="@string/p3_color_region" android:summary="@string/p3_color_region_summary" />
+        </miuix.preference.RadioSetPreferenceCategory>
+        <miuix.preference.RadioSetPreferenceCategory>
+            <com.xiaomi.misettings.display.ExpertRadioPreference android:title="@string/srgb_color_region" android:summary="@string/srgb_color_region_summary" />
+        </miuix.preference.RadioSetPreferenceCategory>
+    </com.xiaomi.misettings.display.ExpertPreferenceCategory>
+    <com.xiaomi.misettings.display.MiPreferenceCategory android:title="@string/rgb_space_color">
+        <com.xiaomi.misettings.display.ExpertSeekBarRedPreference android:title="@string/rgb_space_color_R" android:key="color_r" />
+        <com.xiaomi.misettings.display.ExpertSeekBarGreenPreference android:title="@string/rgb_space_color_G" android:key="color_g" />
+        <com.xiaomi.misettings.display.ExpertSeekBarBluePreference android:title="@string/rgb_space_color_B" android:key="color_b" />
+    </com.xiaomi.misettings.display.MiPreferenceCategory>
+    <com.xiaomi.misettings.display.MiPreferenceCategory android:title="@string/hsv_space_color">
+        <com.xiaomi.misettings.display.ExpertSeekBarHuePreference android:title="@string/hsv_space_color_hue" android:key="color_hue" />
+        <com.xiaomi.misettings.display.ExpertSeekBarPreference android:title="@string/hsv_space_color_saturation" android:key="color_saturation" />
+        <com.xiaomi.misettings.display.ExpertSeekBarPreference android:title="@string/hsv_space_color_value" android:key="color_value" />
+    </com.xiaomi.misettings.display.MiPreferenceCategory>
+    <com.xiaomi.misettings.display.MiPreferenceCategory android:title="@string/other_parameter">
+        <com.xiaomi.misettings.display.ExpertSeekBarPreference android:title="@string/contrast_ratio" android:key="contrast_ratio" />
+        <com.xiaomi.misettings.display.ExpertSeekBarPreference android:title="@string/gamma" android:key="gamma" />
+    </com.xiaomi.misettings.display.MiPreferenceCategory>
+    <com.xiaomi.misettings.display.SpacePreference />
+    <com.xiaomi.misettings.display.MiPreferenceCategory />
+    <com.xiaomi.misettings.display.ResetExpertPreference android:key="reset_edit" />
+    <com.xiaomi.misettings.display.RestoreExpertPreference android:key="restore_expert" />
+</PreferenceScreen>

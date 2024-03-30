@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settings.coolsound.widget.MixMatchAnimalRecyclerView android:id="@id/rcv_animal_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/notification_reminder_page_margin_botton" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/view_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/rcv_animal_list" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/rcv_animal_list">
+        <miuix.androidbasewidget.widget.ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/color_mix_match_tab_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/screen_paper_mode_apps_loading" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

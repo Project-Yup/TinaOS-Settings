@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/usage_focus_bg_share" android:width="@dimen/usage_focus_bg_share" />
+    <solid android:color="@color/miui_system_blue" />
+    <padding android:left="@dimen/usage_focus_share_btn_padding" android:top="@dimen/usage_focus_share_btn_padding" android:right="@dimen/usage_focus_share_btn_padding" android:bottom="@dimen/usage_focus_share_btn_padding" />
+</shape>

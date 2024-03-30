@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:layout_width="@dimen/focus_mode_timer_item_width_and_height" android:layout_height="@dimen/focus_mode_timer_item_width_and_height" android:layout_marginLeft="@dimen/focus_mode_timer_item_decoration" android:layout_marginRight="@dimen/focus_mode_timer_item_decoration" android:layout_marginHorizontal="@dimen/focus_mode_timer_item_decoration"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/focus_mode_timer_item_normal_view" android:layout_width="@dimen/focus_mode_timer_item_width_and_height" android:layout_height="@dimen/focus_mode_timer_item_width_and_height">
+        <ImageView android:id="@id/focus_mode_timer_bg" android:background="@drawable/focus_time_unselect_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/frequent_timer_item_minutes_num_size" android:textColor="@color/frequent_timer_item_mins_color" android:id="@id/focus_mode_timer_minutes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="mipro-medium" />
+            <TextView android:textSize="@dimen/frequent_timer_item_minutes_text_size" android:textColor="@color/frequent_timer_item_mins_color" android:gravity="top" android:layout_gravity="center_horizontal" android:id="@id/focus_mode_timer_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro-medium" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/focus_mode_timer_item_del_view" android:background="@drawable/ic_delete_mask_new_with_del" android:visibility="gone" android:layout_width="@dimen/focus_mode_timer_item_width_and_height" android:layout_height="@dimen/focus_mode_timer_item_width_and_height" android:contentDescription="@string/focus_mode_timer_delete" />
+</FrameLayout>

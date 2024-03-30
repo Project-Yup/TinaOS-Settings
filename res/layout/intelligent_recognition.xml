@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.coolsound.widget.IntelligentLayout android:orientation="vertical" android:id="@id/intelligent_recognition_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/call_ringtone_margin" android:paddingEnd="@dimen/call_ringtone_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/call_phone_ringtone_ly_margin_top" android:layout_marginBottom="@dimen/call_phone_ringtone_ly_margin_bottom" android:layout_marginStart="@dimen/call_ringtone_cat_margin">
+        <TextView android:textSize="13.099976dip" android:textColor="@color/personality_hint_ringtone_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/call_phone_ringtone_ly_margin" android:layout_marginBottom="@dimen/call_phone_ringtone_ly_margin" android:text="@string/service_ringtone_title" android:textDirection="locale" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@id/intelligent_recognition_card" android:focusable="true" android:layout_width="@dimen/delivery_man_card_width" android:layout_height="@dimen/delivery_man_card_height" android:layout_marginBottom="@dimen/delivery_man_card_margin_bottom" android:contentDescription="@string/intelligent_recognition_item_title" app:cardBackgroundColor="#00000000" app:cardCornerRadius="@dimen/coolsound_item_corner" app:cardElevation="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <VideoView android:id="@id/intelligent_recognition_vv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/intelligent_recognition_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+            <com.android.settings.coolsound.widget.PlayButton android:id="@id/intelligent_recognition_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/call_ringtone_cat_margin" layout="@layout/intelligent_recognition_item" />
+</com.android.settings.coolsound.widget.IntelligentLayout>

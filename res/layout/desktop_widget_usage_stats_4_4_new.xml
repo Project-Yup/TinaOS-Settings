@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/us_widget_bg" android:paddingLeft="@dimen/common_60_px2dp" android:paddingRight="@dimen/common_60_px2dp" android:paddingBottom="@dimen/common_40_px2dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/common_60_px2dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/view_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/us_widget_normal_title" android:textColor="@color/us_widget_main_title" android:id="@id/tv_usage_time" android:paddingTop="@dimen/common_44_px2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_placeholder" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/common_5_px2dp" android:layout_marginEnd="0.0dip" />
+        <TextView android:textSize="@dimen/us_widget_normal_hint" android:textColor="@color/us_widget_left_time" android:id="@id/tv_left_time" android:paddingBottom="@dimen/common_67_px2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="mipro-medium" android:layout_marginStart="@dimen/common_5_px2dp" android:layout_marginEnd="0.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/desktop_widget_placeholder_4_4" />
+    </LinearLayout>
+    <include android:id="@id/tv_authorization" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/common_60_px2dp" android:layout_marginEnd="@dimen/common_60_px2dp" layout="@layout/desktop_widget_un_authorization" />
+</RelativeLayout>

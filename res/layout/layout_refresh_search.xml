@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.nestedheader.widget.NestedHeaderLayout android:orientation="vertical" android:id="@id/action_bar_fragment_nested_header_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:headerView="@id/header_view" app:rangeOffset="0.0px" app:scrollableView="@id/id_spring_back"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" layout="@layout/miuix_appcompat_search_stub" />
+    <com.xiaomi.misettings.display.RefreshRate.ContentSpringBackLayout android:id="@id/id_spring_back" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollOrientation="vertical" app:scrollableView="@id/id_list">
+        <miuix.recyclerview.widget.RecyclerView android:id="@id/id_list" android:visibility="gone" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="14.5dip" />
+    </com.xiaomi.misettings.display.RefreshRate.ContentSpringBackLayout>
+    <com.xiaomi.misettings.display.RefreshRate.LoadingView android:id="@id/id_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</miuix.nestedheader.widget.NestedHeaderLayout>

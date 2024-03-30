@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:sharedUserId="android.uid.system" coreApp="true" package="com.xiaomi.misettings" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.MANAGE_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.settings.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.xiaomi.mi_connect_service.permission.BRING_UP_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_THEME"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <permission android:label="@string/app_name" android:name="com.xiaomi.misettings.SETTINGS_BANNER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="@string/app_name" android:name="com.xiaomi.misettings.screentime" android:protectionLevel="signature"/>
+    <permission android:label="@string/app_name" android:name="com.xiaomi.misettings.permission.FOCUS_MODE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <protected-broadcast android:name="com.xiaomi.action.ELDERLY_MODE"/>
+    <permission android:name="com.xiaomi.misettings.permission.EASYMODE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.xiaomi.misettings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xiaomi.misettings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher_new" android:label="@string/app_name" android:name="com.xiaomi.misettings.Application" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/Theme.MiSettings">
+        <meta-data android:name="miui.supportAppContinuity" android:value="true"/>
+        <meta-data android:name="miui.screenOrientation" android:value="1.unspecified,2.portrait,3.unspecified"/>
+        <property android:name="android.view.PROPERTY_MIUI_SMOOTH_CORNER_ENABLED" android:value="true"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:label="@string/app_use" android:name="com.xiaomi.misettings.usagestats.ui.NewAppCategoryListActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/ActivityRoot">
+            <intent-filter>
+                <action android:name="miui.action.usagestas.NEW_APP_CATEGORY_LIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/usage_state_focus_mode_title" android:name="com.xiaomi.misettings.usagestats.FocusSettingsMainActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:exported="true" android:label="@string/more_settings" android:name="com.android.settings.coolsound.CoolSoundPhoneActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="miui.intent.action.COOL_SOUND_PHONE"/>
+                <action android:name="miui.intent.action.COOL_SOUND_PHONE_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.misettings.usagestats.DeviceTimeoverActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings.FullScreen">
+            <intent-filter android:priority="1">
+                <action android:name="miui.intent.action.USAGE_STATS_DEVICE_TIMEOVER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.misettings.usagestats.TimeoverActivity" android:permission="com.xiaomi.misettings.screentime" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/Theme.MiSettings.Transparent">
+            <intent-filter android:priority="1">
+                <action android:name="miui.intent.action.USAGE_STATS_TIMEOVER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.xiaomi.misettings.usagestats.focusmode.port.FocusModeTimingPortActivity" android:permission="com.xiaomi.misettings.permission.FOCUS_MODE" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="miui.intent.action.FOCUS_MODE_TIMING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:directBootAware="true" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.xiaomi.misettings.usagestats.focusmode.port.FocusModePortActivity" android:screenOrientation="portrait" android:taskAffinity="com.android.settings.root" android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="miui.intent.action.FOCUS_MODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:directBootAware="true" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.xiaomi.misettings.usagestats.focusmode.land.FocusModeLandActivity" android:screenOrientation="landscape" android:taskAffinity="com.android.settings.root" android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="miui.intent.action.FOCUS_MODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.xiaomi.misettings.usagestats.focusmode.land.FocusModeTimingLandActivity" android:permission="com.xiaomi.misettings.permission.FOCUS_MODE" android:resizeableActivity="false" android:screenOrientation="landscape" android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="miui.intent.action.FOCUS_MODE_TIMING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:name="com.xiaomi.misettings.usagestats.focusmode.service.FocusModeForeBackGroundMonitorService"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.xiaomi.misettings.usagestats.UsageAppDetailActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.xiaomi.misettings.usagestats.ui.NewAppUsageDetailFragment"/>
+        </activity>
+        <activity android:exported="true" android:name="com.xiaomi.misettings.usagestats.UsageStatsTimeSetActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings">
+            <intent-filter>
+                <action android:name="misettings.android.action.USAGE_TIME_SET"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.xiaomi.misettings.usagestats.devicelimit.DeviceLimitSettings"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:directBootAware="true" android:launchMode="singleTask" android:name="com.xiaomi.misettings.usagestats.focusmode.FocusModeFinishActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.xiaomi.misettings.usagestats.focusmode.FocusModeFinishFragment"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.xiaomi.misettings.usagestats.focusmode.FocusSettingsActivity" android:permission="miui.misetings.permission.FOCUS_MODE" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="miui.intent.action.FOCUS_MODE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.xiaomi.misettings.usagestats.focusmode.FocusSettingsFragment"/>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.xiaomi.misettings.usagestats.UsageStatsMainActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/ActivityRoot" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <data android:host="misettings.screentime" android:pathPrefix="/list" android:scheme="screentime"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="miui.action.usagestas.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MONKEY"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.misettings.usagestats.home.ui.NewSubSettings" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/ActivityRoot" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.home.service.FetchAppNameService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="true" android:name="org.hapjs.features.channel.ChannelService">
+            <intent-filter>
+                <action android:name="org.hapjs.features.channel.action.BIND"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:name="com.xiaomi.misettings.usagestats.ui.AppCategoryListActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.android.settings.coolsound.AreaAnimalSoundActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.android.settings.coolsound.AreaAnimalSoundPadActivity" android:resizeableActivity="false" android:theme="@style/Theme.MiSettings"/>
+        <activity android:name="com.android.settings.coolsound.CoolSoundMixMatchSettings" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MiSettings"/>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.controller.DeviceUsageMonitorService"/>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.devicelimit.DeviceLimitMonitorService" android:process=":remote"/>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.devicelimit.DeviceLimitProlongAppService"/>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.devicelimit.CurrentNoLimitAppMonitorService" android:process=":remote"/>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.controller.AppLimitService" android:process=":remote"/>
+        <service android:exported="true" android:name="com.xiaomi.misettings.usagestats.UsageCacheService" android:process=":remote">
+            <intent-filter>
+                <action android:name="miui.settings.action.LOAD_USAGE_DATA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.xiaomi.misettings.usagestats.loadappname.LoadAppNameService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.xiaomi.misettings.ILoadAppNameInterface"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.statutoryholidays.UpdateHolidayService"/>
+        <service android:exported="true" android:name="com.android.settings.coolsound.CoolSoundPreloadService">
+            <intent-filter>
+                <action android:name="com.xiaomi.misettings.action_PRELOAD"/>
+            </intent-filter>
+        </service>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.xiaomi.misettings.usagestats.AppTimerReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="miui.intent.action.settings.SCHEDULE_DEVICE_USAGE_MONITOR"/>
+                <action android:name="miui.intent.action.settings.SCHEDULE_APP_LIMIT"/>
+                <action android:name="miui.intent.action.settings.SCHEDULE_PROLONG_LIMIT_TIME"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="miui.settings.action.PRELOAD_YESTERDAY"/>
+                <action android:name="misettings.action.FOCUS_MODE_SHARE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="miui.settings.action.NOTIFY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.settings.ThemeUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/mms" android:name="com.android.settings.MultiSimRingtoneActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Ringtone"/>
+        <provider android:authorities="com.xiaomi.misettings.usagestats.screentimecontentprovider" android:enabled="true" android:exported="true" android:name="com.xiaomi.misettings.usagestats.dataprovider.ScreenTimeContentProvider" android:permission="com.xiaomi.misettings.screentime" android:process=":remote"/>
+        <provider android:authorities="com.xiaomi.misettings.usagestats.screentimemainprocessprovider" android:enabled="true" android:name="com.xiaomi.misettings.usagestats.dataprovider.ScreenTimeMainProcessProvider"/>
+        <provider android:authorities="com.xiaomi.misettings.MiSettingsSearchProvider" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.xiaomi.misettings.MiSettingsSearchProvider">
+            <intent-filter>
+                <action android:name="miui.intent.action.SETTINGS_SEARCH_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.xiaomi.misettings.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.xiaomi.misettings.usagestats.provider.CompatFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.xiaomi.misettings.usagestats.focusmode.data.TimerContentProvider" android:exported="true" android:name="com.xiaomi.misettings.usagestats.focusmode.data.TimerContentProvider"/>
+        <activity android:name="com.xiaomi.misettings.usagestats.PadAuthorizationActivity"/>
+        <uses-library android:name="com.miui.system" android:required="false"/>
+        <receiver android:exported="true" android:label="@string/desktop_widget_screen_use_time" android:name="com.xiaomi.misettings.usagestats.widget.desktop.widget.SimpleUsageStatsWidget" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="10000"/>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/desktop_widget_simple_usage_stats"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.INNER_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.xiaomi.misettings.usagestats.widget.desktop.service.UsageStatsUpdateService" android:process=":widgetProvider"/>
+        <receiver android:exported="true" android:label="@string/desktop_widget_screen_use_time" android:name="com.xiaomi.misettings.usagestats.widget.desktop.widget.NormalUsageStatsWidget" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="10000"/>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/desktop_widget_normal_usage_stats"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.INNER_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.miui.desktop_widget.sp" android:name="com.xiaomi.misettings.usagestats.widget.desktop.sp.PreferencesProvider"/>
+        <service android:exported="false" android:name="com.xiaomi.misettings.usagestats.service.AppCategoryLimitService" android:process=":remote"/>
+        <service android:label="" android:name="com.xiaomi.misettings.usagestats.service.SteadyOnService"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.xiaomi.misettings.usagestats.CompulsoryRestActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/Theme.MiSettings.Transparent"/>
+        <service android:label="" android:name="com.miui.greenguard.upload.UploadAppDataService"/>
+        <service android:name="com.miui.greenguard.devicelimit.GreenGardDeviceLimitMonitorService" android:process=":remote"/>
+        <provider android:authorities="com.xiaomi.misettings.usagestats.ControlProvider" android:exported="true" android:name="com.miui.greenguard.provider.ControlProvider" android:permission="com.xiaomi.misettings.screentime"/>
+        <activity android:name="com.xiaomi.misettings.usagestats.home.ui.PreferenceSubSettings" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/PreferenceRoot" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <provider android:authorities="com.android.settings.banner.BannerProvider" android:exported="true" android:grantUriPermissions="true" android:name="com.android.settings.banner.BannerProvider" android:permission="com.xiaomi.misettings.SETTINGS_BANNER">
+            <intent-filter>
+                <action android:name="miui.intent.action.SETTINGS_NOTIFICATION_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <receiver android:exported="false" android:name="com.android.settings.banner.infos.MiTransferBannerReceiver">
+            <intent-filter>
+                <action android:name="android.provision.action.PROVISION_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.android.settings.banner.infos.MiTransferBannerJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="miuiWidgetVersion" android:value="1"/>
+        <provider android:authorities="com.xiaomi.misetting.sp" android:name="com.xiaomi.misettings.usagestats.provider.SharePreferencesProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.misettings.usagestats.ExitMultiWindowActivity" android:resizeableActivity="false" android:theme="@style/Theme.Translucent"/>
+        <property android:name="android.view.PROPERTY_MIUI_SMOOTH_CORNER_ENABLED" android:value="true"/>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.xiaomi.misettings.usagestats.AppStartTimerReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="miui.android.intent.action.SCREEN_OFF"/>
+                <action android:name="miui.android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.xiaomi.misettings.usagestats.service.MainProcessService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.miui.greenguard.manager.account.AccountStatusChangeReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.accounts.LOGIN_ACCOUNTS_PRE_CHANGED"/>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_PRE_CHANGED"/>
+                <action android:name="com.xiaomi.accounts.LOGIN_ACCOUNTS_POST_CHANGED"/>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_POST_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:label="@string/advanced_mode" android:name="com.xiaomi.misettings.display.ScreenExpertActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.ExpertTheme">
+            <intent-filter>
+                <action android:name="miui.intent.action.SCREEN_EXPERT"/>
+                <action android:name="miui.intent.action.SCREEN_EXPERT_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/screen_fps_title" android:name="com.xiaomi.misettings.display.RefreshRate.RefreshRateActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/MiSettings.Theme.DayNight">
+            <intent-filter>
+                <action android:name="miui.intent.action.SCREEN_REFRESH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/new_customize_high_refresh_title" android:name="com.xiaomi.misettings.display.RefreshRate.HighRefreshOptionsActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight">
+            <intent-filter>
+                <action android:name="miui.intent.action.HIGH_REFRESH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:label="@string/anti_flicker_title" android:name="com.xiaomi.misettings.display.AntiFlickerMode.AntiFlickerActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/Theme.ExpertTheme">
+            <intent-filter>
+                <action android:name="miui.intent.action.ANTI_FLICKER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="com.miui.okhttp" android:required="false"/>
+        <activity android:exported="true" android:label="@string/title_activity_easy_mode" android:name="com.xiaomi.easymode.EasyModeActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/Theme.DayNight">
+            <intent-filter>
+                <action android:name="com.xiaomi.action.ENTER_ELDERLY_MODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.xiaomi.easymode.EasyModeFragment"/>
+        </activity>
+        <receiver android:exported="true" android:name="com.xiaomi.easymode.EasyModeReceiver" android:permission="com.xiaomi.misettings.permission.EASYMODE">
+            <intent-filter>
+                <action android:name="com.xiaomi.action.DESKTOP_LAUNCH_ELDERLY_MODE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="android.supports_size_changes" android:value="true"/>
+        <activity android:configChanges="orientation|screenSize" android:label=" " android:name="com.misettings.common.base.SubSettings" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="com.android.settings"/>
+        <meta-data android:name="miuixpreference" android:value="3.0"/>
+        <meta-data android:name="miui_private_label" android:value="PRIVATE_V150"/>
+        <meta-data android:name="appcompat" android:value="3.0"/>
+        <meta-data android:name="pinyin" android:value="1.0"/>
+        <meta-data android:name="springback" android:value="3.0"/>
+        <meta-data android:name="recyclerview" android:value="2.0"/>
+        <meta-data android:name="visualcheck" android:value="1.0"/>
+        <meta-data android:name="popupwidget" android:value="1.0"/>
+        <meta-data android:name="miuixstretchablewidget" android:value="1.0"/>
+        <meta-data android:name="slidingwidget" android:value="1.0"/>
+        <meta-data android:name="miuixbasewidget" android:value="1.0"/>
+        <meta-data android:name="androidbasewidget" android:value="1.0"/>
+        <meta-data android:name="smooth" android:value="1.0"/>
+        <meta-data android:name="pickerwidget" android:value="1.0"/>
+        <meta-data android:name="graphics" android:value="2.0"/>
+        <meta-data android:name="nestedheader" android:value="3.0"/>
+        <meta-data android:name="nest" android:value="2.0"/>
+        <meta-data android:name="haptic" android:value="1.0"/>
+        <meta-data android:name="textutilities" android:value="2.0"/>
+        <meta-data android:name="core" android:value="2.0"/>
+        <meta-data android:name="dynamicoverscroller" android:value="2.0"/>
+        <meta-data android:name="recyclerview_animator" android:value="2.0"/>
+        <meta-data android:name="folme" android:value="2.0"/>
+        <provider android:authorities="com.xiaomi.misettings.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="viewpager" android:value="2.0"/>
+        <meta-data android:name="theme" android:value="1.0"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="org.hapjs.features.channel.transparentactivity.TransparentActivity" android:theme="@style/channelsdk_Theme.Transparent">
+            <intent-filter>
+                <action android:name="org.hapjs.features.channel.action.LAUNCH_APP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="spring" android:value="1.0"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <meta-data android:name="animation" android:value="1.0"/>
+        <meta-data android:name="devicebaseinfo" android:value="1.0"/>
+        <receiver android:exported="true" android:name="miui.settings.commonlib.ApplicationReceiverStub">
+            <intent-filter>
+                <action android:name="miui.intent.action.RESTART_APP_STUB"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

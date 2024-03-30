@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/id_content_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <com.xiaomi.misettings.usagestats.home.widget.GifImageView android:layout_gravity="center" android:id="@id/id_gif_image" android:layout_width="116.359985dip" android:layout_height="182.53998dip" />
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_font_size_42" android:id="@id/id_message1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/system_permission_secondary_line_space" />
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/id_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/id_runtime_permission" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_dimen_85">
+            <TextView android:textSize="@dimen/system_permission_main_purpose_text" android:textColor="@color/system_permission_title" android:id="@id/id_runtime_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:fontFamily="mipro-medium" />
+            <TextView android:textSize="@dimen/system_permission_privacy_text" android:textColor="@color/system_permission_desc" android:id="@id/id_runtime_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/system_permission_item_summary_padding_top" android:singleLine="false" />
+            <LinearLayout android:orientation="vertical" android:id="@id/id_runtime_per_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/id_optional_permission" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_dimen_85">
+            <TextView android:textSize="@dimen/system_permission_main_purpose_text" android:textColor="@color/system_permission_title" android:id="@id/id_optional_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:fontFamily="mipro-medium" />
+            <TextView android:textSize="@dimen/system_permission_privacy_text" android:textColor="@color/system_permission_desc" android:id="@id/id_optional_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/system_permission_item_summary_padding_top" android:singleLine="false" />
+            <LinearLayout android:orientation="vertical" android:id="@id/id_optional_per_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_font_size_38" android:id="@id/id_message2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_dimen_85" android:lineSpacingExtra="@dimen/system_permission_secondary_line_space" />
+        <TextView android:textSize="@dimen/text_font_size_38" android:layout_gravity="start" android:id="@id/id_message3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/system_permission_secondary_line_space" android:lineSpacingExtra="@dimen/system_permission_secondary_line_space" />
+    </LinearLayout>
+</ScrollView>

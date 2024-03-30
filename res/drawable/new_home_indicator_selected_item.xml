@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="32.72dip" android:width="167.26999dip" />
+    <corners android:radius="10.899994dip" />
+    <solid android:color="@color/usage_new_home_indicator_selected_color" />
+</shape>

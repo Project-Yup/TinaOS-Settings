@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/usage_state_text_size70" android:textColor="@color/usage_stats_black90" android:id="@id/tv_usage_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/usage_stats_app_usage_list_title_margin_top" android:text="@string/usage_state_today_total_text" android:layout_marginStart="@dimen/usage_category_bar_left" />
+    <com.xiaomi.misettings.usagestats.widget.NewBarChartView android:id="@id/id_category_usagebar" android:paddingBottom="@dimen/usage_stats_detail_bar_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/usage_stats_detail_bar_view_height" android:layout_marginStart="@dimen/usage_category_bar_left" android:layout_marginEnd="@dimen/usage_category_bar_left" />
+    <com.xiaomi.misettings.usagestats.widget.DivideLine android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

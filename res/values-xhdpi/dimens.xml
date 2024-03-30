@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="system_permission_item_summary_padding_top">1.0099792dip</dimen>
+    <dimen name="system_permission_item_title_padding_left">11.639984dip</dimen>
+    <dimen name="system_permission_list_vertical_size">16.659973dip</dimen>
+    <dimen name="system_permission_main_purpose_text">15.309998sp</dimen>
+    <dimen name="system_permission_privacy_text">12.649994sp</dimen>
+    <dimen name="system_permission_secondary_line_space">2.3299866dip</dimen>
+    <dimen name="text_font_size_38">12.669983sp</dimen>
+    <dimen name="text_font_size_42">14.0sp</dimen>
+    <dimen name="view_dimen_66">22.0dip</dimen>
+    <dimen name="view_dimen_85">28.329987dip</dimen>
+</resources>

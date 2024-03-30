@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/id_night_stub" android:layout="@layout/layout_anim_night" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/id_afternoon_stub" android:layout="@layout/layout_anim_afternoon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/id_morning_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/id_morning_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:lottie_imageAssetsFolder="images_morning" />
+    </FrameLayout>
+</merge>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_in_card" android:textColor="@color/color_tv" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/coolsound_title_margin" android:maxWidth="@dimen/coolsound_txt_max_width" android:maxLines="3" android:layout_alignParentBottom="true" android:importantForAccessibility="no" android:fontFamily="mipro-medium" android:layout_marginStart="@dimen/coolsound_summary_start"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ringtone_item" android:padding="@dimen/coolsound_item_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <ViewStub android:id="@id/more_rintone_layout_stub" android:layout="@layout/more_ringtone_layout_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="18.179993sp" android:textColor="@color/color_tv" android:ellipsize="end" android:gravity="center" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/coolsound_title_margin" android:maxWidth="@dimen/coolsound_txt_max_width" android:maxLines="3" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/coolsound_summary_start" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_tv" android:gravity="center" android:id="@android:id/text2" android:background="@drawable/shape_more_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/more_ringtone" android:paddingStart="9.0dip" android:paddingEnd="9.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

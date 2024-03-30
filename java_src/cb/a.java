@@ -1,0 +1,46 @@
+package cb;
+/* loaded from: classes2.dex */
+public final class a {
+    public static final int alpha = 2130968705;
+    public static final int dependencyType = 2130968939;
+    public static final int effectiveScreenOrientation = 2130969008;
+    public static final int fastScrollEnabled = 2130969032;
+    public static final int fastScrollHorizontalThumbDrawable = 2130969033;
+    public static final int fastScrollHorizontalTrackDrawable = 2130969034;
+    public static final int fastScrollVerticalThumbDrawable = 2130969035;
+    public static final int fastScrollVerticalTrackDrawable = 2130969036;
+    public static final int font = 2130969077;
+    public static final int fontProviderAuthority = 2130969079;
+    public static final int fontProviderCerts = 2130969080;
+    public static final int fontProviderFetchStrategy = 2130969081;
+    public static final int fontProviderFetchTimeout = 2130969082;
+    public static final int fontProviderPackage = 2130969083;
+    public static final int fontProviderQuery = 2130969084;
+    public static final int fontProviderSystemFontFamily = 2130969085;
+    public static final int fontStyle = 2130969086;
+    public static final int fontVariationSettings = 2130969087;
+    public static final int fontWeight = 2130969088;
+    public static final int hideInScreenMode = 2130969108;
+    public static final int layoutManager = 2130969165;
+    public static final int level = 2130969232;
+    public static final int maxLevel = 2130969284;
+    public static final int minLevel = 2130969295;
+    public static final int miuixMarginLeftSystemWindowInsets = 2130969330;
+    public static final int miuixMarginRightSystemWindowInsets = 2130969331;
+    public static final int miuixMarginTopSystemWindowInsets = 2130969332;
+    public static final int miuixPaddingBottomSystemWindowInsets = 2130969333;
+    public static final int miuixPaddingLeftSystemWindowInsets = 2130969334;
+    public static final int miuixPaddingRightSystemWindowInsets = 2130969335;
+    public static final int miuixPaddingTopSystemWindowInsets = 2130969336;
+    public static final int moduleContent = 2130969347;
+    public static final int name = 2130969366;
+    public static final int nestedScrollViewStyle = 2130969379;
+    public static final int queryPatterns = 2130969494;
+    public static final int recyclerViewStyle = 2130969511;
+    public static final int reverseLayout = 2130969522;
+    public static final int shortcutMatchRequired = 2130969569;
+    public static final int spanCount = 2130969605;
+    public static final int stackFromEnd = 2130969632;
+    public static final int targetLevel = 2130969678;
+    public static final int ttcIndex = 2130969780;
+}

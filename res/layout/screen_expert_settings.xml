@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/preview_preference" />
+    <miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/scrollview">
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/prefs_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="43.599976dip" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </miuix.springback.view.SpringBackLayout>
+</LinearLayout>

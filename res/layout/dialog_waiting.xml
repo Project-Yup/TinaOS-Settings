@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miuix.androidbasewidget.widget.ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.ProgressBar" />
+    <TextView android:textSize="17.449982dip" android:textStyle="normal" android:id="@id/id_wait_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wait_tip" android:height="25.449982dip" android:fontFamily="mipro-medium" android:layout_marginStart="10.0dip" android:textFontWeight="400" />
+</LinearLayout>

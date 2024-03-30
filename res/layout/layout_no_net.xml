@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="51.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_no_net" />
+    <TextView android:id="@id/id_request_fail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/usage_no_net_summary" style="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" />
+    <Button android:textSize="15.299988sp" android:textStyle="normal" android:textColor="@color/usage_stats_black70" android:layout_gravity="center_horizontal" android:id="@id/id_refresh" android:visibility="visible" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/usage_refresh" android:fontFamily="mipro-medium" />
+</LinearLayout>

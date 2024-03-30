@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/follow_item" android:padding="@dimen/coolsound_item_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/coolsound_follow_height" android:layout_marginTop="@dimen/coolsound_follow_margin2" android:layout_marginBottom="@dimen/coolsound_follow_margin2" android:layout_marginStart="@dimen/coolsound_follow_padding" android:layout_marginEnd="@dimen/coolsound_follow_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/follow_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.699982sp" android:textColor="@color/color_tv" android:ellipsize="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/coolsound_follow_max_width" android:text="@string/follow_sim1" android:maxLines="1" android:layout_weight="0.58" />
+            <TextView android:textSize="13.799988sp" android:textColor="@color/color_tv" android:ellipsize="end" android:id="@id/follow_item_txt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/coolsound_txt_max_width" android:maxLines="1" android:layout_weight="0.42" android:textAlignment="textEnd" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/usage_stats_white" android:paddingLeft="@dimen/usage_state_item_common_margin" android:paddingRight="@dimen/usage_state_item_common_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/usage_stats_app_info_item_height" android:paddingHorizontal="@dimen/usage_state_item_common_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/id_item_icon" android:layout_width="@dimen/usage_state_item_image_wh" android:layout_height="@dimen/usage_state_item_image_wh" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_ll_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/usage_stats_app_info_text_start_margin">
+        <TextView android:textSize="@dimen/usage_stats_app_info_title" android:textColor="@color/usage_category_item_name_text_color" android:id="@id/id_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro-medium" android:textAlignment="viewStart" />
+        <ImageView android:id="@id/iv_limit_tag" android:visibility="invisible" android:layout_width="14.199982dip" android:layout_height="14.199982dip" android:src="@drawable/ic_limit_tag" android:layout_marginStart="7.1999817dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/usage_stats_app_info_right_text" android:textColor="@color/usage_stats_black40" android:id="@id/id_item_usage_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro" />
+    <ImageView android:layout_marginStart="@dimen/usage_stats_app_info_right_icon_margin" style="@style/ArrowImg" />
+</LinearLayout>

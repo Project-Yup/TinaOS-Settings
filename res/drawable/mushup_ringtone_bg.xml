@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.smooth.SmoothGradientDrawable android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/nature_mix_mushup_ringtone_bg_start_color" android:endColor="@color/nature_mix_mushup_ringtone_bg_end_color" android:angle="0.0" android:type="linear" />
+    <corners android:radius="@dimen/more_ringtone_card_radius" />
+</miuix.smooth.SmoothGradientDrawable>

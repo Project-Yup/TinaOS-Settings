@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.19998dip">
+        <View android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:gravity="end|center" android:id="@id/btn_tap1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/usage_state_today" android:fontFamily="mipro-medium" />
+        <TextView android:textSize="20.0sp" android:gravity="start|center" android:id="@id/btn_tap2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/usage_state_channel_week" android:fontFamily="mipro-medium" android:layout_marginStart="@dimen/usage_stats_tab_margin" />
+        <View android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_back_icon" android:layout_centerVertical="true" android:contentDescription="@string/back" android:layout_marginStart="10.0dip" />
+</RelativeLayout>

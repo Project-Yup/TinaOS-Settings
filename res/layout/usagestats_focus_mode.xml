@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaomi.misettings.usagestats.focusmode.widget.NewFocusModeBackgroundView android:id="@id/id_focus_anim_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/id_time_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/usage_stats_focus_time_margin_top">
+        <TextView android:textSize="@dimen/focuse_mode_time_size" android:textColor="@color/usage_stats_only_white" android:id="@id/id_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" android:layout_centerHorizontal="true" android:fontFamily="mipro-extralight" />
+        <TextView android:textSize="@dimen/focuse_mode_time_size" android:textColor="@color/usage_stats_only_white" android:id="@id/id_text_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/id_tag" android:layout_centerVertical="true" android:fontFamily="mipro-extralight" />
+        <TextView android:textSize="@dimen/focuse_mode_time_size" android:textColor="@color/usage_stats_only_white" android:id="@id/id_text_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/id_tag" android:layout_centerVertical="true" android:fontFamily="mipro-extralight" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/id_hour_glass" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/id_text_second" android:layout_marginStart="1.6699829dip" app:lottie_loop="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/focus_mode_summary_size" android:textColor="@color/usage_stats_only_white" android:gravity="center" android:id="@id/id_focus_mode_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/id_time_container" android:layout_centerHorizontal="true" android:fontFamily="mipro-medium" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/usage_focus_bottom" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/usage_stats_only_white70" android:id="@id/id_call_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usage_state_focus_call" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/id_take_photo" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_sysbar_camera" android:layout_centerVertical="true" android:contentDescription="@string/usage_state_focus_take_photo" android:layout_marginEnd="@dimen/usage_focus_end" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

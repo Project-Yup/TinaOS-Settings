@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:key="image_preferce_category">
+        <com.xiaomi.misettings.widget.FpsSchematicDiagramPreference />
+        <com.misettings.common.widget.FooterPreference android:title="@string/high_fps_tip_footer" android:key="high_fps_tip_footer" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="btn_preferce_category">
+        <miuix.preference.RadioButtonPreferenceCategory android:key="btn_preferce_category">
+            <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:title="@string/intelligent_radio_btn_title" android:key="intelligent_recommendation" android:summary="@string/intelligent_radio_btn_summary" />
+            <miuix.preference.RadioSetPreferenceCategory>
+                <miuix.preference.RadioButtonPreference android:title="@string/customize_radio_btn_title" android:key="customize_fps" android:summary="@string/customize_radio_btn_summary" />
+                <miuix.preference.DropDownPreference android:title="@string/fps_radio_btn_title" android:key="customize_fps_ddp" android:dependency="customize_fps" />
+            </miuix.preference.RadioSetPreferenceCategory>
+        </miuix.preference.RadioButtonPreferenceCategory>
+        <com.misettings.common.widget.FooterPreference android:key="user_tip_footer" />
+    </PreferenceCategory>
+</PreferenceScreen>

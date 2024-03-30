@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="16.699982sp" android:textColor="@color/btn_color" android:id="@id/start_mode" android:background="@drawable/bg_focus_btn" android:layout_width="@dimen/btn_width" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/button_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="mipro-medium" />
+    <com.xiaomi.easymode.widget.ViewPagerIndicator android:id="@id/indicator_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/indicator_bottom" android:layout_above="@id/start_mode" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/indicator_margin" android:layout_marginEnd="@dimen/indicator_margin" />
+    <com.xiaomi.easymode.widget.CRelativeLayout android:id="@id/hot_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/indicator_lyt">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_lyt" android:layout_width="@dimen/btn_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_lyt_marginTop" android:layout_marginBottom="@dimen/content_lyt_marginBottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/title_font_size" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/title_bottom" android:fontFamily="mipro-medium" />
+            <TextView android:textSize="@dimen/content_font_size" android:textColor="@color/content_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/content_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="mipro-medium" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/viewpager_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mobile_frame_top" android:layout_above="@id/content_lyt" android:layout_centerHorizontal="true">
+            <com.xiaomi.easymode.widget.CViewPager android:id="@id/viewpager" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </com.xiaomi.easymode.widget.CRelativeLayout>
+</RelativeLayout>

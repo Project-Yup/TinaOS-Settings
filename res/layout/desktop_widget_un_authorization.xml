@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/common_36_px2dp" android:textColor="@color/us_widget_authorization_txt" android:gravity="center" android:id="@id/tv_authorization" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desktop_widget_authorization_new" android:layout_marginEnd="@dimen/common_20_px2dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

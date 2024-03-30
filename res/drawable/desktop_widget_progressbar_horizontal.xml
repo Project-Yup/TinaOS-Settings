@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/us_widget_pgr_bg" />
+            <corners android:radius="@dimen/miuix_appcompat_progress_bar_line_radius" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
+        <scale android:drawable="@drawable/desktop_widget_progressbar_horizontal_primary" android:scaleWidth="100%" />
+    </item>
+</layer-list>

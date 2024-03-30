@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="23.329987dip" />
+    <solid android:color="#fffdfdff" />
+    <stroke android:width="0.33000004dip" android:color="#1a000000" />
+    <gradient android:startColor="@color/history_share_bg_start" android:endColor="@color/history_share_bg_end" android:angle="-90.0" android:type="linear" />
+</shape>

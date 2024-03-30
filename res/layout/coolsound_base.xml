@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/scroll_view"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:background="@color/base_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/coolsound_tab_top_margin" />
+            <com.android.settings.coolsound.widget.TabLayout android:id="@id/page_tab" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/coolsound_tab_margin2" android:layout_marginBottom="@dimen/coolsound_tab_margin2" android:minHeight="@dimen/coolsound_tab_height" android:layout_marginStart="@dimen/coolsound_tab_margin" android:layout_marginEnd="@dimen/coolsound_tab_margin" />
+            <com.android.settings.coolsound.widget.ScrollViewPager android:id="@id/sound_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</miuix.springback.view.SpringBackLayout>

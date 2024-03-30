@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:key="weekday_category">
+        <miuix.preference.CheckBoxPreference android:title="@string/workday_limit" android:key="weekday_switch" android:defaultValue="false" />
+        <miuix.preference.TextPreference android:title="@string/avalible_per_day" android:key="weekday_usable_time" />
+        <com.xiaomi.misettings.usagestats.widget.AddRangeTextPreference android:title="@string/unavailable_per_day" android:key="weekday_unusable_times" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="weekend_category">
+        <miuix.preference.CheckBoxPreference android:title="@string/holiday_limit" android:key="weekend_switch" android:defaultValue="false" />
+        <miuix.preference.TextPreference android:title="@string/avalible_per_day" android:key="weekend_usable_time" />
+        <com.xiaomi.misettings.usagestats.widget.AddRangeTextPreference android:title="@string/unavailable_per_day" android:key="weekend_unusable_times" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="unlimit_apps_category">
+        <miuix.preference.TextPreference android:title="@string/usage_stats_no_limit" android:key="unlimit_apps" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/anti_flicker_mode_categroy" android:key="mode_category">
+        <miuix.preference.RadioButtonPreferenceCategory android:key="mode_set_category">
+            <miuix.preference.RadioSetPreferenceCategory>
+                <miuix.preference.RadioButtonPreference android:title="@string/normal_mode" android:key="normal_mode" />
+            </miuix.preference.RadioSetPreferenceCategory>
+            <miuix.preference.RadioSetPreferenceCategory>
+                <miuix.preference.RadioButtonPreference android:title="@string/anti_flicker_mode" android:key="anti_flicker_mode" android:summary="@string/anti_flicker_mode_summary_new" />
+            </miuix.preference.RadioSetPreferenceCategory>
+        </miuix.preference.RadioButtonPreferenceCategory>
+    </PreferenceCategory>
+    <com.xiaomi.misettings.widget.DCHintPreference android:layout="@layout/anti_flicker_hint_lyt" android:key="anti_flick_hint" />
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/animal_card" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/animal_card_width" android:layout_height="@dimen/animal_card_height" android:layout_marginStart="@dimen/animal_card_item_margin" android:layout_marginEnd="5.0dip" app:cardCornerRadius="@dimen/animal_card_radius" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/animal_card_lyt_margin_top" android:layout_marginBottom="@dimen/animal_card_lyt_margin_bottom" android:paddingStart="@dimen/animal_card_lyt_padding_start">
+        <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/animal_card_part1_height">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/animal_card_info_name_size" android:textColor="@color/animal_name_color" android:id="@id/animal_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/animal_card_title_max_width" />
+                    <com.android.settings.coolsound.widget.PlayView android:layout_gravity="center_vertical" android:id="@id/play_view" android:visibility="gone" android:layout_width="19.599976dip" android:layout_height="20.0dip" android:layout_marginLeft="11.0dip" android:layout_alignParentEnd="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/animal_card_info_summary_size" android:textColor="@color/animal_info_color" android:id="@id/animal_info" android:scrollbars="vertical" android:layout_width="@dimen/animal_card_info_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/animal_card_between_name_summary_margin" android:textDirection="locale" />
+            </LinearLayout>
+            <ImageView android:id="@id/animal_icon" android:layout_width="@dimen/animal_card_icon_width" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:translationY="@dimen/animal_card_icon_transition" />
+        </LinearLayout>
+        <TableLayout android:id="@id/animal_class" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/animal_card_space" android:stretchColumns="*">
+            <TableRow>
+                <TextView android:textSize="@dimen/animal_card_bottom_name_size" android:textColor="@color/animal_class_color" android:id="@id/gang" android:text="@string/animal_class" android:textDirection="locale" />
+                <TextView android:textSize="@dimen/animal_card_bottom_name_size" android:textColor="@color/animal_class_color" android:id="@id/item" android:text="@string/animal_item" android:textDirection="locale" />
+                <TextView android:textSize="@dimen/animal_card_bottom_name_size" android:textColor="@color/animal_class_color" android:id="@id/branch" android:text="@string/animal_branch" android:textDirection="locale" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="@dimen/animal_card_bottom_title_size" android:textColor="@color/animal_desc_info" android:id="@id/class_info" android:fontFamily="mipro-medium" android:textDirection="locale" />
+                <TextView android:textSize="@dimen/animal_card_bottom_title_size" android:textColor="@color/animal_desc_info" android:id="@id/item_info" android:fontFamily="mipro-medium" android:textDirection="locale" />
+                <TextView android:textSize="@dimen/animal_card_bottom_title_size" android:textColor="@color/animal_desc_info" android:id="@id/branch_info" android:fontFamily="mipro-medium" android:textDirection="locale" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

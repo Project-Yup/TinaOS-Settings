@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/miuix_action_end_menu_group">
+        <item android:id="@id/menu_create_shortcut" android:title="@string/create_shortcut" />
+        <item android:id="@id/menu_feedback" android:title="@string/suggestion" />
+        <item android:id="@id/menu_privacy" android:title="@string/privacy_policy" />
+        <item android:id="@id/menu_stop_apptimer" android:title="@string/stop_app_timer" />
+    </group>
+</menu>

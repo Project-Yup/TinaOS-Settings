@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/usage_stats_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout android:id="@id/id_spring_back" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/id_scroll_view">
+        <miuix.core.widget.NestedScrollView android:id="@id/id_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/id_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/id_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/category_header_layout" />
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/usage_stats_detail_chart_bottom_margin_line" />
+                <include android:id="@id/id_divide" layout="@layout/home_floor_divide" />
+                <include android:id="@id/id_limit_item_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/usagestats_app_limit_item" />
+            </LinearLayout>
+        </miuix.core.widget.NestedScrollView>
+    </com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout>
+    <com.xiaomi.misettings.usagestats.widget.LoadingView android:id="@id/id_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

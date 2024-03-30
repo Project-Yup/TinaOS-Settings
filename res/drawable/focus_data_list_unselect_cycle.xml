@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/usage_focus_data_cycle_wh" android:width="@dimen/usage_focus_data_cycle_wh" />
+    <solid android:color="@color/usage_history_unselect_cycle" />
+</shape>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <miui.widget.MessageView android:id="@id/id_week_average" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.MessageView.Guide" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_switch" android:background="@drawable/miuix_preference_item_background_light" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.PreferenceList" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/usage_stats_device_limit" android:textAlignment="viewStart" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/usage_stats_device_limit_summary" android:textAlignment="viewStart" style="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" />
+        </LinearLayout>
+        <miuix.slidingwidget.widget.SlidingButton android:id="@id/set_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_normal_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_normal_day_time_set" android:background="@drawable/miuix_preference_item_background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.359985dip">
+            <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.PreferenceList" android:id="@id/tv_normal_time_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/usage_state_usage_time_weekday_title" android:layout_weight="1.0" android:textAlignment="viewStart" />
+            <TextView android:textSize="13.089996sp" android:id="@id/tv_normal_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/miuix_appcompat_arrow_right" android:layout_marginStart="6.909973dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_week_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_week_day_time_set" android:background="@drawable/miuix_preference_item_background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.359985dip">
+            <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.PreferenceList" android:id="@id/tv_week_day_time_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/usage_app_holiday_limit" android:layout_weight="1.0" android:textAlignment="viewStart" />
+            <TextView android:textSize="13.089996sp" android:id="@id/tv_week_day_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Miuix.AppCompat.TextAppearance.List.Secondary.Preference" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/miuix_appcompat_arrow_right" android:layout_marginStart="6.909973dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/id_no_limit_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_no_limit" android:background="@drawable/miuix_preference_item_background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.359985dip">
+            <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.PreferenceList" android:id="@id/id_no_limit_set_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/usage_stats_no_limit" android:layout_weight="1.0" android:textAlignment="viewStart" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/miuix_appcompat_arrow_right" android:layout_marginStart="6.909973dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

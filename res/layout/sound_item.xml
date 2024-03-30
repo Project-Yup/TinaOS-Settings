@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ringtone_item" android:padding="@dimen/coolsound_item_padding" android:layout_width="@dimen/coolsound_video_width_mod" android:layout_height="@dimen/coolsound_video_height" android:layout_margin="@dimen/coolsound_grid_item_margin" android:layout_columnWeight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="#00000000" app:cardCornerRadius="@dimen/coolsound_item_corner" app:cardElevation="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_item" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+            <ViewStub android:id="@id/sound_item_summary_stub" android:layout="@layout/sound_item_summary_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/coolsound_title_margin" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/coolsound_summary_start" />
+            <ViewStub android:id="@id/play_view_stub" android:layout="@layout/play_view_stub" android:layout_width="@dimen/play_view_width" android:layout_height="@dimen/play_view_height" android:layout_marginTop="15.599976dip" android:layout_marginEnd="18.899994dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

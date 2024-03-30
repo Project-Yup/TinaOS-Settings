@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xiaomi.misettings.usagestats.widget.InterceptEventLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_switch_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/usage_state_limit_item_switch_height" android:paddingStart="@dimen/usage_state_item_common_margin" android:paddingEnd="@dimen/usage_state_item_common_margin">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.179993sp" android:textColor="@color/usage_detail_main_title_color" android:ellipsize="end" android:id="@id/tv_limit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usage_new_home_app_limit_title" android:maxLines="2" android:fontFamily="mipro-medium" android:textAlignment="viewStart" />
+            <TextView android:textSize="13.809998sp" android:textColor="@color/usage_detail_main_summary_color" android:ellipsize="end" android:id="@id/ttv_limit_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0899963dip" android:text="@string/usage_new_home_app_limit_summary" android:maxLines="2" android:textAlignment="viewStart" />
+        </LinearLayout>
+        <miuix.slidingwidget.widget.SlidingButton android:id="@id/app_limit_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.xiaomi.misettings.usagestats.widget.InterceptEventLinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_weekday" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/usage_state_limit_item_info_height" android:paddingStart="@dimen/usage_state_item_common_margin" android:paddingEnd="@dimen/usage_state_item_common_margin">
+        <TextView android:textSize="18.0sp" android:id="@id/tv_weekday_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/usage_app_weekday_limit" android:layout_weight="1.0" android:fontFamily="mipro-medium" android:textAlignment="viewStart" />
+        <TextView android:textSize="16.0sp" android:id="@id/tv_weekday_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_marginStart="7.269989dip" style="@style/ArrowImg" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_weekend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/usage_state_limit_item_info_height" android:paddingStart="@dimen/usage_state_item_common_margin" android:paddingEnd="@dimen/usage_state_item_common_margin">
+        <TextView android:textSize="18.0sp" android:id="@id/tv_weekend_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/usage_app_holiday_limit" android:layout_weight="1.0" android:fontFamily="mipro-medium" android:textAlignment="viewStart" />
+        <TextView android:textSize="16.0sp" android:id="@id/tv_weekend_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_marginStart="7.269989dip" style="@style/ArrowImg" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/usage_time_summary_text_color" android:ellipsize="end" android:layout_gravity="start" android:id="@id/tv_sysapp_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/usage_state_item_common_margin" android:layout_marginTop="@dimen/usage_state_system_app_margin_top" android:layout_marginRight="@dimen/usage_state_item_common_margin" android:text="@string/usage_new_home_sys_no_limit_summary" android:fontFamily="mipro-regular" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/usage_state_item_common_margin" />
+</LinearLayout>

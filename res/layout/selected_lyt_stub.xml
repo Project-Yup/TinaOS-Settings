@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:id="@id/selected_lyt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="locale" android:paddingStart="21.799988dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.179993dip" android:textColor="@color/mashup_entrance_title_color" android:ellipsize="end" android:id="@id/selected_ringtone_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:maxLines="3" android:layout_centerVertical="true" />
+    <com.android.settings.coolsound.widget.PlayView android:id="@id/play_view" android:visibility="gone" android:layout_width="15.299988dip" android:layout_height="15.299988dip" android:layout_marginTop="15.599976dip" android:layout_centerVertical="true" android:layout_marginStart="11.0dip" android:layout_marginEnd="18.899994dip" android:layout_toEndOf="@id/selected_ringtone_name" />
+    <TextView android:textSize="13.799988dip" android:textColor="@color/mashup_entrance_title_color" android:gravity="center" android:id="@android:id/text2" android:background="@drawable/all_ringtone_btn_bg" android:layout_width="83.599976dip" android:layout_height="37.0dip" android:text="@string/all_ringtone" android:layout_centerVertical="true" android:fontFamily="mipro-medium" android:layout_marginEnd="21.799988dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

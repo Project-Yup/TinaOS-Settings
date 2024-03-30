@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V28.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V28.Theme.AppCompat.Light" />
+    <style name="Theme.CoolSoundSettings" parent="@style/Theme.MiSettings">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="background">@android:color/white</item>
+    </style>
+    <style name="Theme.Dark.FloatingWindow" parent="@style/Theme.Dark">
+        <item name="android:windowBackground">@drawable/miuix_appcompat_floating_window_bg_dark</item>
+        <item name="android:windowIsTranslucent">@bool/miuix_appcompat_floating_window_is_translucent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:actionModeBackground">@drawable/miuix_appcompat_floating_action_mode_bg_dark</item>
+        <item name="android:actionBarSize">@dimen/miuix_appcompat_action_bar_floating_height</item>
+        <item name="android:actionModeSplitBackground">@drawable/miuix_appcompat_floating_action_bar_split_bg_dark</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="actionBarExpandBackground">@drawable/miuix_appcompat_floating_action_bar_split_bg_expanded_dark</item>
+        <item name="actionBarSplitBackground">@drawable/miuix_appcompat_floating_action_bar_split_bg_dark</item>
+        <item name="actionbarSearchMaskColor">@color/miuix_appcompat_floating_action_bar_search_mask_color_dark</item>
+        <item name="isMiuixFloatingTheme">true</item>
+        <item name="listMenuBackground">@drawable/miuix_appcompat_floating_list_menu_bg_dark</item>
+        <item name="miuixAppcompatColorPrimary">@color/miuix_appcompat_floating_primary_color_dark</item>
+        <item name="miuixAppcompatFloatingWindowBorderColor">@color/miuix_appcompat_floating_window_border_color_dark</item>
+        <item name="windowFixedHeightMajor">@dimen/miuix_appcompat_floating_window_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/miuix_appcompat_floating_window_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/miuix_appcompat_floating_window_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/miuix_appcompat_floating_window_fixed_width_minor</item>
+        <item name="windowFloating">@bool/miuix_appcompat_window_floating</item>
+        <item name="windowMaxHeightMajor">@dimen/miuix_appcompat_dialog_max_height_major</item>
+        <item name="windowMaxHeightMinor">@dimen/miuix_appcompat_dialog_max_height_minor</item>
+        <item name="windowMaxWidthMajor">@dimen/miuix_appcompat_dialog_max_width_major</item>
+        <item name="windowMaxWidthMinor">@dimen/miuix_appcompat_dialog_max_width_minor</item>
+        <item name="windowTranslucentStatus">opaque</item>
+    </style>
+    <style name="Theme.Light.FloatingWindow" parent="@style/Theme.Light">
+        <item name="android:windowBackground">@drawable/miuix_appcompat_floating_window_bg_light</item>
+        <item name="android:windowIsTranslucent">@bool/miuix_appcompat_floating_window_is_translucent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:actionModeBackground">@drawable/miuix_appcompat_floating_action_mode_bg_light</item>
+        <item name="android:actionBarSize">@dimen/miuix_appcompat_action_bar_floating_height</item>
+        <item name="android:actionModeSplitBackground">@drawable/miuix_appcompat_floating_action_bar_split_bg_light</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="actionBarExpandBackground">@drawable/miuix_appcompat_floating_action_bar_split_bg_expanded_light</item>
+        <item name="actionBarSplitBackground">@drawable/miuix_appcompat_floating_action_bar_split_bg_light</item>
+        <item name="actionbarSearchMaskColor">@color/miuix_appcompat_floating_action_bar_search_mask_color_light</item>
+        <item name="isMiuixFloatingTheme">true</item>
+        <item name="listMenuBackground">@drawable/miuix_appcompat_floating_list_menu_bg_light</item>
+        <item name="miuixAppcompatColorPrimary">@color/miuix_appcompat_floating_primary_color_light</item>
+        <item name="miuixAppcompatFloatingWindowBorderColor">@color/miuix_appcompat_floating_window_border_color_light</item>
+        <item name="windowFixedHeightMajor">@dimen/miuix_appcompat_floating_window_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/miuix_appcompat_floating_window_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/miuix_appcompat_floating_window_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/miuix_appcompat_floating_window_fixed_width_minor</item>
+        <item name="windowFloating">@bool/miuix_appcompat_window_floating</item>
+        <item name="windowMaxHeightMajor">@dimen/miuix_appcompat_dialog_max_height_major</item>
+        <item name="windowMaxHeightMinor">@dimen/miuix_appcompat_dialog_max_height_minor</item>
+        <item name="windowMaxWidthMajor">@dimen/miuix_appcompat_dialog_max_width_major</item>
+        <item name="windowMaxWidthMinor">@dimen/miuix_appcompat_dialog_max_width_minor</item>
+        <item name="windowTranslucentStatus">opaque</item>
+    </style>
+    <style name="Theme.MiSettings" parent="@style/Theme.DayNight.MiSettings">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="arrowRightFillColor">@color/miuix_appcompat_arrow_right_fill_color_light</item>
+        <item name="preferencePrimaryTextColor">@color/miuix_preference_primary_text_light</item>
+        <item name="preferenceSecondaryTextColor">@color/miuix_preference_secondary_text_light</item>
+    </style>
+    <style name="Theme.MiSettings.FullScreen" parent="@style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Theme.MiSettings.Transparent" parent="@style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Theme.Ringtone" parent="@style/Theme.MiSettings">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="preferenceTheme">@style/V12.PreferenceThemeOverlay.Light</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+        <item name="dialogCornerRadius">?android:dialogCornerRadius</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+        <item name="dialogCornerRadius">?android:dialogCornerRadius</item>
+    </style>
+</resources>

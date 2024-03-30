@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/selected_fps_view" android:paddingBottom="@dimen/refresh_card_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/selector_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants">
+        <View android:id="@id/selected_bg" android:background="@drawable/bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.xiaomi.misettings.widget.RoundCornerLinearLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/refresh_card_height" android:scaleType="centerCrop" app:lottie_autoPlay="true" app:lottie_loop="true" />
+        </com.xiaomi.misettings.widget.RoundCornerLinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/refresh_card_descrip_padding_start">
+            <TextView android:textColor="#ffffffff" android:id="@id/fps_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/fps_value" android:fontFamily="mipro-medium" />
+            <TextView android:textSize="@dimen/refresh_card_name_size" android:textColor="#ffffffff" android:id="@id/fps_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/refresh_card_descrip_margin_bottom" android:layout_alignParentBottom="true" android:fontFamily="mipro-medium" />
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:textSize="13.819977sp" android:textColor="@drawable/fps_summary_selector" android:id="@id/fps_view_summary" android:paddingLeft="@dimen/fps_view_summary_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:includeFontPadding="false" android:layout_below="@id/selector_view" />
+</RelativeLayout>

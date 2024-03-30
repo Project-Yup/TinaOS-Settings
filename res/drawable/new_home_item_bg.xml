@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="76.359985dip" android:width="366.53906dip" />
+    <solid android:color="@color/usage_new_home_item_bg" />
+    <corners android:radius="12.0dip" />
+</shape>

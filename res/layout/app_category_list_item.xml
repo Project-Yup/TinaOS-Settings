@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/usage_stats_white" android:paddingLeft="@dimen/usage_state_item_common_margin" android:paddingRight="@dimen/usage_state_item_common_margin" android:layout_width="fill_parent" android:layout_height="@dimen/usage_stats_app_info_item_height" android:paddingHorizontal="@dimen/usage_state_item_common_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_app_icon" android:layout_width="@dimen/usage_state_item_image_wh" android:layout_height="@dimen/usage_state_item_image_wh" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_name_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/usage_stats_app_info_text_start_margin">
+        <TextView android:textSize="@dimen/usage_stats_app_info_title" android:textColor="@color/usage_state_black" android:ellipsize="end" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:fontFamily="mipro-medium" />
+        <ImageView android:id="@id/iv_limit_tag" android:visibility="visible" android:layout_width="14.199982dip" android:layout_height="14.199982dip" android:src="@drawable/ic_limit_tag" android:layout_marginStart="7.1999817dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/usage_stats_app_info_right_text" android:textColor="@color/usage_stats_item_right_text" android:gravity="end" android:id="@id/tv_app_usage_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <ImageView android:id="@id/id_iv_right_arrow" android:layout_marginStart="@dimen/usage_state_item_arrow_margin_left" style="@style/ArrowImg" />
+</LinearLayout>

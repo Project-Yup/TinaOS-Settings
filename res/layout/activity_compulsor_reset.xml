@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/fl_top" android:layout_width="@dimen/progress_circular" android:layout_height="@dimen/progress_circular" android:layout_marginTop="@dimen/rest_pgr_margin_top" android:layout_centerHorizontal="true">
+        <com.xiaomi.misettings.usagestats.home.widget.CircularProgressView android:id="@id/progress_circular" android:layout_width="fill_parent" android:layout_height="fill_parent" app:backColor="@color/white10" app:backWidth="10.0dip" app:progEndColor="#ff40baff" app:progStartColor="#ffa9f5ff" app:progWidth="10.0dip" app:progress="80" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="64.0sp" android:textColor="@color/white" android:id="@id/rest_time_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06:49" android:fontFamily="misans-medium" android:fontFeatureSettings="tnum" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="28.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/rest_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/fl_top" android:layout_marginHorizontal="8.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/continue_use_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/rest_time" android:layout_marginHorizontal="8.0dip" />
+    <Button android:textSize="17.449982sp" android:textColor="@color/white" android:id="@id/back_to_home" android:background="@drawable/bg_time_over_delay_use_not" android:layout_width="@dimen/bottom_btn_max_width" android:layout_height="48.0dip" android:layout_marginBottom="48.0dip" android:text="@string/compulsor_tip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>
